@@ -1,8 +1,7 @@
 # Experimental Algorithms for Learning Binomial Distribution from Truncated Samples
----
+
 
 ## About
----
 This library contains the implementation od three different algorithms that can be used to leaarn a Binomial distribution from Truncated Samples.
 They were implemented as part of my diploma thesis and the proofs for their correctness can be found here.
 
@@ -18,7 +17,6 @@ Three functions that use each of the above methods are also provided as examples
 
 
 ## Author
----
 Katerina Mamali
 
 
