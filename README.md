@@ -33,10 +33,97 @@ Run the following commands:
 * `pip install <location of .whl file>`
 
 ## Usage
-1.
+Below we present the existing function along with their parameters and explain their meaning.
+1. `learn_binomial_PSGD`
+  * `samples_gen`:
+  A generator of samples from the distribution in question.
+  Must be samples from a Binomial distribution, orelse there is no guarantee for the output of the algorithm.
+  It can be any distribution generator with a method `rvs` to return samples of this distribution.
+  * `truncation set`:
+  A list or array of a subset of the distribution domain.
+  * `alpha`:
+  The truncation set mass in the distribution in question.
+  * `B`:
+  The radius of the ball which is the set on which the algorithm projects the solutions.
+  If not specified by the user the algorithm uses a function of `epsilon`, `alpha`, `delta` to calculate this value.
+  Default `None`.
+  * `h`:
+  The learning rate.
+  If not specified by the user the algorithm uses a function of `epsilon`, `alpha`, `delta` to calculate this value.
+  Default `None`.
+  * `M`:
+  Number of samples used by the algorithm.
+  If not specified by the user the algorithm uses a function of `epsilon`, `alpha`, `delta` to calculate this value.
+  Default `None`.
+  * `epsilon`:
+  Controls the accuracy achieved by the algorithm.
+  Default `0.1`.
+  * `delta`:
+  Controls the succes probability of the algorithm.
+  Default `99%`.
+  * `printing`:
+  Controls printing of intermediate results while the program searches for the distribution's parameters.
+  If enabled it will print 10 updates for the state of search.
+  Default `None`.
 
-2.
+2. `learn_p_known_n_PSGD`
+  * `n`:
+  The parameter of the Binomial.
+  * `samples_gen`:
+  A generator of samples from the distribution in question.
+  Must be samples from a Binomial distribution, orelse there is no guarantee for the output of the algorithm.
+  It can be any distribution generator with a method `rvs` to return samples of this distribution.
+  * `truncation set`:
+  A list or array of a subset of the distribution domain.
+  * `alpha`:
+  The truncation set mass in the distribution in question.
+  * `B`:
+  The radius of the ball which is the set on which the algorithm projects the solutions.
+  If not specified by the user the algorithm uses a function of `epsilon`, `alpha`, `delta` to calculate this value.
+  Default `None`.
+  * `h`:
+  The learning rate.
+  If not specified by the user the algorithm uses a function of `epsilon`, `alpha`, `delta` to calculate this value.
+  Default `None`.
+  * `M`:
+  Number of samples used by the algorithm.
+  If not specified by the user the algorithm uses a function of `epsilon`, `alpha`, `delta` to calculate this value.
+  Default `None`.
+  * `epsilon`:
+  Controls the accuracy achieved by the algorithm.
+  Default `0.1`.
+  * `delta`:
+  Controls the succes probability of the algorithm.
+  Default `99%`.
+  * `printing`:
+  Controls printing of intermediate results while the program searches for the distribution's parameters.
+  If enabled it will print 10 updates for the state of search.
+  Default `None`.
 
-3.
+3. `learn_p_known_n_system`
+  * `n`:
+  The parameter of the Binomial.
+  * `samples_gen`:
+  A generator of samples from the distribution in question.
+  Must be samples from a Binomial distribution, orelse there is no guarantee for the output of the algorithm.
+  It can be any distribution generator with a method `rvs` to return samples of this distribution.
+  * `truncation set`:
+  A list or array of a subset of the distribution domain.
+  * `alpha`:
+  The truncation set mass in the distribution in question.
+  * `M`:
+  Number of samples used by the algorithm.
+  If not specified by the user the algorithm uses a function of `epsilon`, `alpha`, `delta` to calculate this value.
+  Default `None`.
+  * `epsilon`:
+  Controls the accuracy achieved by the algorithm.
+  Default `0.1`.
+  * `delta`:
+  Controls the succes probability of the algorithm.
+  Default `99%`.
+  * `printing`:
+  Controls printing of intermediate results while the program searches for the distribution's parameters.
+  If enabled it will print 10 updates for the state of search.
+  Default `None`.
 
 ## Reference
