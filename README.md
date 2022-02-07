@@ -1,7 +1,7 @@
-#Experimental Algorithms for Learning Binomial Distribution from Truncated Samples
+# Experimental Algorithms for Learning Binomial Distribution from Truncated Samples
 ***
 
-##About
+## About
 ---
 This library contains the implementation od three different algorithms that can be used to leaarn a Binomial distribution from Truncated Samples.
 They were implemented as part of my diploma thesis and the proofs for their correctness can be found here.
@@ -17,30 +17,31 @@ Specifically you can find the following three methods:
 Three functions that use each of the above methods are also provided as examples.
 
 
-##Author
+## Author
 ---
 Katerina Mamali
 
 
-##Dependencies
+## Dependencies
 ---
 * NumPy
 * Matplotlib.pyplot
 * SciPy.stats
 
-##Installation
+## Installation
+---
 Run the following commands:
 
 * `python3 setup.py bdist_wheel`
 
 * `pip install <location of .whl file>`
 
-##Usage
+## Usage
 ---
-1. 
+1.
 
 2.
 
 3.
 
-##Reference
+## Reference
