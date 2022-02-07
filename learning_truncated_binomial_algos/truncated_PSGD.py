@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import rv_discrete, norm
 
-plt.style.use(['dark_background'])
+exec(open("./styling.py").read())
 
 
 class MyValueError(ValueError): pass

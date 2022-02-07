@@ -4,7 +4,7 @@ from scipy.stats import binom, norm
 from learning_truncated_binomial_algos.learn_truncated_PSGD \
 import LearnDistribution, MyValueError
 
-plt.style.use(['dark_background'])
+exec(open("./styling.py").read())
 
 
 def project(par, ball):
