@@ -1,5 +1,5 @@
 # Experimental Algorithms for Learning Binomial Distribution from Truncated Samples
-***
+---
 
 ## About
 ---
