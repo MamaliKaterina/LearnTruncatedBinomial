@@ -21,13 +21,11 @@ Katerina Mamali
 
 
 ## Dependencies
----
 * NumPy
 * Matplotlib.pyplot
 * SciPy.stats
 
 ## Installation
----
 Run the following commands:
 
 * `python3 setup.py bdist_wheel`
@@ -35,7 +33,6 @@ Run the following commands:
 * `pip install <location of .whl file>`
 
 ## Usage
----
 1.
 
 2.
