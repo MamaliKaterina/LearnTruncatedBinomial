@@ -7,11 +7,11 @@ They were implemented as part of my diploma thesis and the proofs for their corr
 
 Specifically you can find the following three methods:
 
-* `learn_binomial_PSGD`: retrieves both parameters of the Binomial $$n, p$$.
+* `learn_binomial_PSGD`: retrieves both parameters of the Binomial $`n, p`$.
 
-* `learn_p_known_n_PSGD`: for known parameter $n$ returns estimation for $$p$$.
+* `learn_p_known_n_PSGD`: for known parameter $`n`$ returns estimation for $`p`$.
 
-* `learn_p_known_n_system`: for known parameter $n$ returns estimation for $$p$$ (slower).
+* `learn_p_known_n_system`: for known parameter $n$ returns estimation for $`p`$ (slower).
 
 Three functions that use each of the above methods are also provided as examples.
 
