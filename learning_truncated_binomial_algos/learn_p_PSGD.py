@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import binom, norm
-from learn_truncated_PSGD import LearnDistribution, MyValueError
+from truncated_PSGD import LearnDistribution, MyValueError
 
 plt.style.use(['dark_background'])
 
@@ -68,7 +68,7 @@ def empirical_estimator(m, gen):
 
 
 def learn_p_PSGD(samples_gen, truncation_set, alpha, \
-                                    B=None, h=None, \
+                                    B=None, h=None, M=None, \
                                     epsilon=0.1, delta=0.01, printing=None):
 
     #parameter empirical estimators
@@ -86,13 +86,14 @@ def learn_p_PSGD(samples_gen, truncation_set, alpha, \
     print('\nStep size', round(h, 5))
 
     #samples
-    M = 100 * int(1 / (alpha * epsilon**2) )
+    if M is None:
+        M = 100 * int(1 / (alpha * epsilon**2) )
     total_samples = 0
     print('\nSamples:', M)
 
     #n estimation
-    l_limit = 400
-    u_limit = 1200
+    l_limit = 0
+    u_limit = N
     print('Upper bound:', u_limit, 'Lower bound:', l_limit)
     n_values = range(l_limit, u_limit)
 

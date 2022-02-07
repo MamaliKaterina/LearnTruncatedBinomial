@@ -71,6 +71,7 @@ for i in range(3):
 
 fig = plt.figure(figsize=(20,12.8))
 axs = fig.subplots(3, 3, sharex=True, sharey=True)
+plt.subplots_adjust(left=0.05, bottom=0.03, right=0.98, top=0.92, wspace=0.05, hspace=0.15)
 fig.suptitle('Bin('+str(n)+', '+str(round(p,2))+')   ε='+str(epsilon),\
               y=0.98, size='xx-large', weight='black')
 
@@ -90,5 +91,5 @@ for i in range(3):
 
 plt.xlim([230,370])
 plt.ylim([-0.0001, 0.03])
-plt.savefig('system_solution_testing')
+plt.savefig('images/system_solution_testing')
 plt.show()
